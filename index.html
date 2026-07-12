@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>親鸞聖人の教え ― 他力本願と念仏の道</title>
+<meta name="description" content="浄土真宗の宗祖・親鸞聖人の生涯とその教え（他力本願・悪人正機・念仏）をわかりやすく紹介するページです。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #2b2523;
+    --ink-soft: #5a4f4a;
+    --washi: #f7f3ea;
+    --washi-deep: #efe8d8;
+    --murasaki: #4a3560;   /* 深い紫 */
+    --murasaki-light: #6b5285;
+    --kin: #b08d3c;        /* 金 */
+    --aka: #8c3f38;        /* 朱 */
+    --line: #d9cfba;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: "Noto Serif JP", serif;
+    background: var(--washi);
+    color: var(--ink);
+    line-height: 1.9;
+    letter-spacing: 0.05em;
+  }
+
+  h1, h2, h3 { font-family: "Shippori Mincho", "Noto Serif JP", serif; }
+
+  .container { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+
+  /* ===== ヘッダー ===== */
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(247, 243, 234, 0.95);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .nav-title {
+    font-family: "Shippori Mincho", serif;
+    font-weight: 800;
+    font-size: 1.15rem;
+    color: var(--murasaki);
+  }
+  .nav-links { display: flex; gap: 22px; flex-wrap: wrap; }
+  .nav-links a {
+    text-decoration: none;
+    color: var(--ink-soft);
+    font-size: 0.92rem;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--murasaki); }
+  .nav-links a.lang-switch {
+    border: 1px solid var(--line);
+    padding: 3px 12px;
+    border-radius: 999px;
+    color: var(--murasaki);
+  }
+  .nav-links a.lang-switch:hover { border-color: var(--murasaki); }
+
+  /* ===== ヒーロー ===== */
+  .hero {
+    position: relative;
+    text-align: center;
+    padding: 110px 24px 100px;
+    background:
+      radial-gradient(ellipse 80% 60% at 50% 0%, rgba(107, 82, 133, 0.10), transparent),
+      linear-gradient(180deg, var(--washi-deep), var(--washi));
+    overflow: hidden;
+  }
+  .hero-enso {
+    width: 190px;
+    height: 190px;
+    margin: 0 auto 34px;
+    display: block;
+  }
+  .hero h1 {
+    font-size: clamp(2rem, 5.5vw, 3.2rem);
+    font-weight: 800;
+    color: var(--murasaki);
+    letter-spacing: 0.18em;
+    margin-bottom: 18px;
+  }
+  .hero .sub {
+    color: var(--ink-soft);
+    font-size: clamp(0.95rem, 2.4vw, 1.1rem);
+    letter-spacing: 0.12em;
+  }
+  .hero .nembutsu {
+    display: inline-block;
+    margin-top: 38px;
+    padding: 12px 34px;
+    border: 1px solid var(--kin);
+    color: var(--kin);
+    font-size: 1.25rem;
+    letter-spacing: 0.35em;
+    text-indent: 0.35em;
+  }
+
+  /* ===== セクション共通 ===== */
+  section { padding: 84px 0; }
+  section:nth-of-type(even) { background: #fbf8f1; }
+
+  .section-label {
+    text-align: center;
+    color: var(--kin);
+    font-size: 0.82rem;
+    letter-spacing: 0.4em;
+    text-indent: 0.4em;
+    margin-bottom: 10px;
+  }
+  .section-title {
+    text-align: center;
+    font-size: clamp(1.5rem, 3.6vw, 2rem);
+    font-weight: 700;
+    color: var(--murasaki);
+    letter-spacing: 0.15em;
+    margin-bottom: 14px;
+  }
+  .section-title::after {
+    content: "";
+    display: block;
+    width: 56px;
+    height: 2px;
+    background: var(--kin);
+    margin: 22px auto 0;
+  }
+  .section-lead {
+    text-align: center;
+    color: var(--ink-soft);
+    max-width: 640px;
+    margin: 26px auto 54px;
+    font-size: 0.98rem;
+  }
+
+  /* ===== 親鸞聖人とは ===== */
+  .intro-text {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.02rem;
+  }
+  .intro-text p + p { margin-top: 1.4em; }
+  .intro-text strong { color: var(--murasaki); font-weight: 700; }
+
+  /* ===== 教えのカード ===== */
+  .teachings {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 26px;
+  }
+  .card {
+    background: #fffdf8;
+    border: 1px solid var(--line);
+    border-top: 3px solid var(--murasaki);
+    padding: 34px 28px;
+    transition: transform 0.25s, box-shadow 0.25s;
+  }
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 28px rgba(74, 53, 96, 0.12);
+  }
+  .card h3 {
+    font-size: 1.25rem;
+    color: var(--murasaki);
+    letter-spacing: 0.12em;
+    margin-bottom: 6px;
+  }
+  .card .yomi {
+    font-size: 0.78rem;
+    color: var(--kin);
+    letter-spacing: 0.18em;
+    margin-bottom: 16px;
+  }
+  .card p { font-size: 0.93rem; color: var(--ink-soft); }
+
+  /* ===== 言葉（引用） ===== */
+  .quote-block {
+    max-width: 680px;
+    margin: 0 auto 46px;
+    text-align: center;
+  }
+  .quote-block:last-child { margin-bottom: 0; }
+  .quote-block blockquote {
+    font-family: "Shippori Mincho", serif;
+    font-size: clamp(1.15rem, 3vw, 1.5rem);
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 2.1;
+    letter-spacing: 0.1em;
+  }
+  .quote-block blockquote::before { content: "「"; color: var(--kin); }
+  .quote-block blockquote::after { content: "」"; color: var(--kin); }
+  .quote-block cite {
+    display: block;
+    margin-top: 14px;
+    font-style: normal;
+    font-size: 0.85rem;
+    color: var(--kin);
+    letter-spacing: 0.2em;
+  }
+  .quote-block .quote-note {
+    margin-top: 16px;
+    font-size: 0.9rem;
+    color: var(--ink-soft);
+    text-align: left;
+  }
+
+  /* ===== 年表 ===== */
+  .timeline {
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+    padding-left: 30px;
+  }
+  .timeline::before {
+    content: "";
+    position: absolute;
+    left: 7px;
+    top: 6px;
+    bottom: 6px;
+    width: 2px;
+    background: var(--line);
+  }
+  .timeline-item { position: relative; padding-bottom: 34px; }
+  .timeline-item:last-child { padding-bottom: 0; }
+  .timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -29px;
+    top: 9px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--washi);
+    border: 3px solid var(--murasaki);
+  }
+  .timeline-item .year {
+    font-family: "Shippori Mincho", serif;
+    font-weight: 700;
+    color: var(--murasaki);
+    font-size: 1.05rem;
+    letter-spacing: 0.08em;
+  }
+  .timeline-item .age {
+    font-size: 0.8rem;
+    color: var(--kin);
+    margin-left: 10px;
+  }
+  .timeline-item p { font-size: 0.93rem; color: var(--ink-soft); margin-top: 4px; }
+
+  /* ===== 著作 ===== */
+  .works {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 22px;
+    max-width: 820px;
+    margin: 0 auto;
+  }
+  .work {
+    background: #fffdf8;
+    border: 1px solid var(--line);
+    padding: 26px 24px;
+  }
+  .work h3 {
+    font-size: 1.05rem;
+    color: var(--murasaki);
+    margin-bottom: 10px;
+    letter-spacing: 0.1em;
+  }
+  .work p { font-size: 0.88rem; color: var(--ink-soft); }
+
+  /* ===== フッター ===== */
+  footer {
+    background: var(--murasaki);
+    color: #e8e0ee;
+    text-align: center;
+    padding: 54px 24px 40px;
+  }
+  footer .footer-nembutsu {
+    font-family: "Shippori Mincho", serif;
+    font-size: 1.3rem;
+    letter-spacing: 0.4em;
+    text-indent: 0.4em;
+    color: #d9c58a;
+    margin-bottom: 22px;
+  }
+  footer p { font-size: 0.82rem; opacity: 0.75; }
+
+  @media (max-width: 600px) {
+    section { padding: 60px 0; }
+    .hero { padding: 70px 20px 64px; }
+    .hero-enso { width: 140px; height: 140px; }
+    .nav-links { gap: 14px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <div class="nav-title">親鸞聖人の教え</div>
+    <div class="nav-links">
+      <a href="#about">親鸞聖人とは</a>
+      <a href="#teachings">教えの核心</a>
+      <a href="#words">聖人の言葉</a>
+      <a href="#timeline">ご生涯</a>
+      <a href="#works">主な著作</a>
+      <a class="lang-switch" href="en/index.html" lang="en">English</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ヒーロー -->
+  <div class="hero">
+    <svg class="hero-enso" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M 100 18
+               A 82 82 0 1 0 152 38"
+            fill="none" stroke="#4a3560" stroke-width="10"
+            stroke-linecap="round" opacity="0.85"/>
+    </svg>
+    <h1>親鸞聖人の教え</h1>
+    <p class="sub">阿弥陀仏の本願に生かされて ― 浄土真宗の宗祖、その生涯と言葉</p>
+    <div class="nembutsu">南無阿弥陀仏</div>
+  </div>
+
+  <!-- 親鸞聖人とは -->
+  <section id="about">
+    <div class="container">
+      <p class="section-label">ABOUT</p>
+      <h2 class="section-title">親鸞聖人とは</h2>
+      <div class="intro-text">
+        <p>親鸞聖人（1173–1263）は、鎌倉時代に生きた僧侶であり、<strong>浄土真宗の宗祖</strong>と仰がれる方です。九歳で出家し、比叡山で二十年にわたる厳しい修行に励まれましたが、自らの力で悟りに至る道に行き詰まりを感じ、二十九歳で山を下りられました。</p>
+        <p>そして<strong>法然上人</strong>との出遇いにより、「ただ念仏して阿弥陀仏にたすけられまいらすべし」という専修念仏の教えに帰依されます。以後、流罪という苦難をも縁として、関東の地で多くの人々に念仏の教えを伝え、九十年のご生涯を通して<strong>「凡夫がそのまま救われていく道」</strong>を明らかにされました。</p>
+        <p>僧侶でありながら公然と妻を持ち、「非僧非俗」と名のられたその生き方は、仏の救いが特別な修行者だけのものではなく、日々の暮らしに生きるすべての人に開かれていることを、身をもって示すものでした。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 教えの核心 -->
+  <section id="teachings">
+    <div class="container">
+      <p class="section-label">TEACHINGS</p>
+      <h2 class="section-title">教えの核心</h2>
+      <p class="section-lead">親鸞聖人の教えは、「自分の力ではどうにもならない私」が、阿弥陀仏の大いなる願いのはたらきによって救われていく道です。</p>
+      <div class="teachings">
+        <div class="card">
+          <h3>他力本願</h3>
+          <p class="yomi">たりきほんがん</p>
+          <p>「他力」とは他人まかせのことではなく、阿弥陀仏の本願のはたらきのこと。自分の計らいや努力によってではなく、仏の側からさしむけられた願いの力によって救われる、という教えの根幹です。</p>
+        </div>
+        <div class="card">
+          <h3>悪人正機</h3>
+          <p class="yomi">あくにんしょうき</p>
+          <p>自らの力で善をなしえない「悪人」こそが、阿弥陀仏の救いの目当て（正機）であるという教え。自分の罪深さ、無力さに気づいた者にこそ、本願は真っ先にはたらくのだと説かれます。</p>
+        </div>
+        <div class="card">
+          <h3>念仏</h3>
+          <p class="yomi">ねんぶつ</p>
+          <p>「南無阿弥陀仏」と称える念仏は、救われるための条件や修行ではなく、すでに救おうとはたらいてくださっている仏への<strong>報恩感謝</strong>のこころの表れであると受けとめられました。</p>
+        </div>
+        <div class="card">
+          <h3>非僧非俗</h3>
+          <p class="yomi">ひそうひぞく</p>
+          <p>流罪により僧の身分を剥奪された親鸞聖人は、「僧に非ず俗に非ず」と名のり、愚禿親鸞と称されました。肉食妻帯の在家生活のまま念仏に生きる、その姿こそが万人に開かれた仏道の証しでした。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 聖人の言葉 -->
+  <section id="words">
+    <div class="container">
+      <p class="section-label">WORDS</p>
+      <h2 class="section-title">聖人の言葉</h2>
+      <p class="section-lead">弟子の唯円がまとめたとされる『歎異抄』には、親鸞聖人の肉声を伝える言葉が数多く残されています。</p>
+
+      <div class="quote-block">
+        <blockquote>善人なほもて往生をとぐ、いはんや悪人をや</blockquote>
+        <cite>― 『歎異抄』第三条</cite>
+        <p class="quote-note">善人でさえ往生できるのだから、まして悪人はなおさらである ― 常識をくつがえすこの言葉には、自力を頼む心を捨てきれない者よりも、仏にすがるほかない者こそ本願の目当てである、という悪人正機の教えが凝縮されています。</p>
+      </div>
+
+      <div class="quote-block">
+        <blockquote>親鸞は弟子一人ももたずさふらふ</blockquote>
+        <cite>― 『歎異抄』第六条</cite>
+        <p class="quote-note">念仏する人々はみな阿弥陀仏の御もよおしによるのであって、自分の弟子ではない ― 共に本願に生かされる「御同朋・御同行」として、人々と対等に歩まれた聖人の姿勢を伝える言葉です。</p>
+      </div>
+
+      <div class="quote-block">
+        <blockquote>ただ念仏のみぞまことにておはします</blockquote>
+        <cite>― 『歎異抄』後序</cite>
+        <p class="quote-note">煩悩にまみれたこの世で、そらごとたわごとでないただ一つのまことは念仏である ― 人間の営みの不確かさを見つめ抜いた聖人の、深い自己凝視から生まれた言葉です。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ご生涯 -->
+  <section id="timeline">
+    <div class="container">
+      <p class="section-label">LIFE</p>
+      <h2 class="section-title">ご生涯</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="year">1173年（承安3年）</span><span class="age">誕生</span>
+          <p>京都の日野の里に、日野有範の子として誕生される。</p>
+        </div>
+        <div class="timeline-item">
+          <span class="year">1181年（養和元年）</span><span class="age">9歳</span>
+          <p>青蓮院にて出家得度。以後、比叡山で約20年の修行に励まれる。</p>
+        </div>
+        <div class="timeline-item">
+          <span class="year">1201年（建仁元年）</span><span class="age">29歳</span>
+          <p>比叡山を下り、六角堂に百日参籠ののち、法然上人の門に入り専修念仏に帰依される。</p>
+        </div>
+        <div class="timeline-item">
+          <span class="year">1207年（承元元年）</span><span class="age">35歳</span>
+          <p>念仏弾圧（承元の法難）により越後（新潟県）へ流罪。僧籍を剥奪され「非僧非俗」の立場に立たれる。</p>
+        </div>
+        <div class="timeline-item">
+          <span class="year">1214年頃（建保2年）</span><span class="age">42歳</span>
+          <p>赦免ののち関東（常陸国など）へ移り、約20年にわたり農民をはじめ多くの人々に念仏の教えを伝えられる。</p>
+        </div>
+        <div class="timeline-item">
+          <span class="year">1224年頃（元仁元年）</span><span class="age">52歳</span>
+          <p>主著『教行信証』の草稿を著される。浄土真宗ではこの年を立教開宗の年とする。</p>
+        </div>
+        <div class="timeline-item">
+          <span class="year">1230年代</span><span class="age">60歳頃</span>
+          <p>京都へ帰り、著述に専念。『教行信証』の完成や和讃の制作など、晩年まで筆をとり続けられる。</p>
+        </div>
+        <div class="timeline-item">
+          <span class="year">1263年（弘長2年）</span><span class="age">90歳</span>
+          <p>弟の尋有の坊舎（善法坊）にて往生の素懐を遂げられる。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 主な著作 -->
+  <section id="works">
+    <div class="container">
+      <p class="section-label">WORKS</p>
+      <h2 class="section-title">主な著作</h2>
+      <div class="works">
+        <div class="work">
+          <h3>教行信証（きょうぎょうしんしょう）</h3>
+          <p>親鸞聖人の主著。正式には『顕浄土真実教行証文類』。浄土真宗の教えの体系を、経典・論釈の引用とともに明らかにした根本聖典です。</p>
+        </div>
+        <div class="work">
+          <h3>三帖和讃（さんじょうわさん）</h3>
+          <p>『浄土和讃』『高僧和讃』『正像末和讃』の総称。仏徳や七高僧の教えを、人々が唱和しやすい和語のうたで讃えたものです。</p>
+        </div>
+        <div class="work">
+          <h3>正信偈（しょうしんげ）</h3>
+          <p>『教行信証』行巻末の偈文「正信念仏偈」。阿弥陀仏の本願と七高僧の伝統を讃える偈で、今日も朝夕のお勤めで広く読誦されています。</p>
+        </div>
+        <div class="work">
+          <h3>歎異抄（たんにしょう）</h3>
+          <p>聖人の没後、弟子の唯円が編んだとされる語録。聖人の言葉を生き生きと伝え、後世多くの人々の心をとらえてきた名著です。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-nembutsu">南無阿弥陀仏</div>
+  <p>このページは親鸞聖人の教えを学ぶための紹介ページです。</p>
+</footer>
+
+</body>
+</html>
