@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Teachings of Shinran ― The Path of Nembutsu and Other Power</title>
-<meta name="description" content="An introduction to the life and teachings of Shinran Shonin (1173–1263), founder of Jodo Shinshu (Shin Buddhism): Other Power, the Primal Vow, and the nembutsu.">
+<title>Las enseñanzas de Shinran ― El camino del nembutsu y el Otro Poder</title>
+<meta name="description" content="Una introducción a la vida y las enseñanzas de Shinran Shonin (1173–1263), fundador del Jodo Shinshu (budismo Shin): el Otro Poder, el Voto Primordial y el nembutsu.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,400&family=Cormorant+Garamond:wght@500;600;700&family=Noto+Serif+JP:wght@500;700&display=swap" rel="stylesheet">
@@ -14,10 +14,10 @@
     --ink-soft: #5a4f4a;
     --washi: #f7f3ea;
     --washi-deep: #efe8d8;
-    --murasaki: #4a3560;   /* deep purple */
+    --murasaki: #4a3560;   /* púrpura profundo */
     --murasaki-light: #6b5285;
-    --kin: #b08d3c;        /* gold */
-    --aka: #8c3f38;        /* vermilion */
+    --kin: #b08d3c;        /* dorado */
+    --aka: #8c3f38;        /* bermellón */
     --line: #d9cfba;
   }
 
@@ -40,7 +40,7 @@
 
   .container { max-width: 900px; margin: 0 auto; padding: 0 24px; }
 
-  /* ===== Header ===== */
+  /* ===== Encabezado ===== */
   header {
     position: sticky;
     top: 0;
@@ -82,7 +82,7 @@
   }
   .nav-links a.lang-switch:hover { border-color: var(--murasaki); }
 
-  /* ===== Hero ===== */
+  /* ===== Portada ===== */
   .hero {
     position: relative;
     text-align: center;
@@ -123,7 +123,7 @@
   }
   .hero .nembutsu .jp { display: block; font-size: 0.85rem; margin-top: 4px; letter-spacing: 0.3em; text-indent: 0.3em; }
 
-  /* ===== Sections ===== */
+  /* ===== Secciones ===== */
   section { padding: 84px 0; }
   section:nth-of-type(even) { background: #fbf8f1; }
 
@@ -159,7 +159,7 @@
     font-size: 1rem;
   }
 
-  /* ===== About ===== */
+  /* ===== Introducción ===== */
   .intro-text {
     max-width: 700px;
     margin: 0 auto;
@@ -168,7 +168,7 @@
   .intro-text p + p { margin-top: 1.4em; }
   .intro-text strong { color: var(--murasaki); font-weight: 700; }
 
-  /* ===== Teaching cards ===== */
+  /* ===== Tarjetas de enseñanzas ===== */
   .teachings {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -199,7 +199,7 @@
   }
   .card p { font-size: 0.95rem; color: var(--ink-soft); }
 
-  /* ===== Quotes ===== */
+  /* ===== Citas ===== */
   .quote-block {
     max-width: 680px;
     margin: 0 auto 46px;
@@ -215,8 +215,8 @@
     line-height: 1.8;
     letter-spacing: 0.02em;
   }
-  .quote-block blockquote::before { content: "\201C"; color: var(--kin); }
-  .quote-block blockquote::after { content: "\201D"; color: var(--kin); }
+  .quote-block blockquote::before { content: "\00AB"; color: var(--kin); }
+  .quote-block blockquote::after { content: "\00BB"; color: var(--kin); }
   .quote-block cite {
     display: block;
     margin-top: 14px;
@@ -232,7 +232,7 @@
     text-align: left;
   }
 
-  /* ===== Timeline ===== */
+  /* ===== Cronología ===== */
   .timeline {
     max-width: 700px;
     margin: 0 auto;
@@ -275,7 +275,7 @@
   }
   .timeline-item p { font-size: 0.95rem; color: var(--ink-soft); margin-top: 4px; }
 
-  /* ===== Works ===== */
+  /* ===== Obras ===== */
   .works {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -296,7 +296,7 @@
   }
   .work p { font-size: 0.9rem; color: var(--ink-soft); }
 
-  /* ===== Footer ===== */
+  /* ===== Pie de página ===== */
   footer {
     background: var(--murasaki);
     color: #e8e0ee;
@@ -332,22 +332,22 @@
 
 <header>
   <nav class="nav">
-    <div class="nav-title">The Teachings of Shinran</div>
+    <div class="nav-title">Las enseñanzas de Shinran</div>
     <div class="nav-links">
-      <a href="#about">Who Was Shinran?</a>
-      <a href="#teachings">Core Teachings</a>
-      <a href="#words">His Words</a>
-      <a href="#timeline">His Life</a>
-      <a href="#works">Major Writings</a>
+      <a href="#about">¿Quién fue Shinran?</a>
+      <a href="#teachings">Enseñanzas centrales</a>
+      <a href="#words">Sus palabras</a>
+      <a href="#timeline">Su vida</a>
+      <a href="#works">Obras principales</a>
       <a class="lang-switch" href="../index.html" lang="ja">日本語</a>
-      <a class="lang-switch" href="../es/index.html" lang="es">Español</a>
+      <a class="lang-switch" href="../en/index.html" lang="en">English</a>
     </div>
   </nav>
 </header>
 
 <main>
 
-  <!-- Hero -->
+  <!-- Portada -->
   <div class="hero">
     <svg class="hero-enso" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <path d="M 100 18
@@ -355,145 +355,145 @@
             fill="none" stroke="#4a3560" stroke-width="10"
             stroke-linecap="round" opacity="0.85"/>
     </svg>
-    <h1>The Teachings of Shinran</h1>
-    <p class="sub">Living within Amida Buddha's Primal Vow ― the life and words of the founder of Jodo Shinshu (Shin Buddhism)</p>
+    <h1>Las enseñanzas de Shinran</h1>
+    <p class="sub">Vivir dentro del Voto Primordial del Buda Amida ― la vida y las palabras del fundador del Jodo Shinshu (budismo Shin)</p>
     <div class="nembutsu">Namu Amida Butsu<span class="jp" lang="ja">南無阿弥陀仏</span></div>
   </div>
 
-  <!-- About -->
+  <!-- ¿Quién fue Shinran? -->
   <section id="about">
     <div class="container">
-      <p class="section-label">ABOUT</p>
-      <h2 class="section-title">Who Was Shinran?</h2>
+      <p class="section-label">INTRODUCCIÓN</p>
+      <h2 class="section-title">¿Quién fue Shinran?</h2>
       <div class="intro-text">
-        <p>Shinran Shonin (1173–1263) was a Buddhist monk of Japan's Kamakura period and is revered as the <strong>founder of Jodo Shinshu</strong>, the school of Pure Land Buddhism known in English as Shin Buddhism. Ordained at the age of nine, he spent twenty years in rigorous training on Mount Hiei, the great monastic center of his day. Yet he came to feel that the path of attaining enlightenment through his own efforts had reached a dead end, and at twenty-nine he left the mountain.</p>
-        <p>His decisive encounter was with the master <strong>Honen</strong>, through whom he entrusted himself to the teaching of the exclusive nembutsu: simply saying the Name of Amida Buddha and being saved by the Buddha's Vow. Even exile ― a persecution he suffered for this teaching ― became an occasion to spread the nembutsu among the ordinary people of eastern Japan. Through a life of ninety years, he clarified <strong>a path by which ordinary, foolish beings are saved just as they are</strong>.</p>
-        <p>Though a monk, Shinran openly married and raised a family, calling himself "neither monk nor layman." His way of life itself demonstrated that the Buddha's salvation is not reserved for special practitioners, but is open to every person living an everyday life.</p>
+        <p>Shinran Shonin (1173–1263) fue un monje budista del período Kamakura de Japón, venerado como el <strong>fundador del Jodo Shinshu</strong>, la escuela del budismo de la Tierra Pura conocida también como budismo Shin. Ordenado a los nueve años, pasó veinte años de rigurosa práctica en el monte Hiei, el gran centro monástico de su época. Sin embargo, llegó a sentir que el camino de alcanzar la iluminación por su propio esfuerzo no tenía salida, y a los veintinueve años abandonó la montaña.</p>
+        <p>Su encuentro decisivo fue con el maestro <strong>Honen</strong>, a través de quien se confió a la enseñanza del nembutsu exclusivo: simplemente pronunciar el Nombre del Buda Amida y ser salvado por el Voto del Buda. Incluso el exilio ― una persecución que sufrió por esta enseñanza ― se convirtió en ocasión para difundir el nembutsu entre la gente común del este de Japón. A lo largo de una vida de noventa años, aclaró <strong>un camino por el cual los seres ordinarios e imperfectos son salvados tal como son</strong>.</p>
+        <p>Aunque era monje, Shinran se casó abiertamente y formó una familia, llamándose a sí mismo «ni monje ni laico». Su propia forma de vida demostró que la salvación del Buda no está reservada a practicantes especiales, sino que está abierta a toda persona que vive una vida cotidiana.</p>
       </div>
     </div>
   </section>
 
-  <!-- Core Teachings -->
+  <!-- Enseñanzas centrales -->
   <section id="teachings">
     <div class="container">
-      <p class="section-label">TEACHINGS</p>
-      <h2 class="section-title">Core Teachings</h2>
-      <p class="section-lead">Shinran's teaching is a path by which "the self that can do nothing through its own power" is saved by the working of Amida Buddha's great Vow.</p>
+      <p class="section-label">ENSEÑANZAS</p>
+      <h2 class="section-title">Enseñanzas centrales</h2>
+      <p class="section-lead">La enseñanza de Shinran es un camino por el cual «el yo que nada puede lograr por su propio poder» es salvado por la obra del gran Voto del Buda Amida.</p>
       <div class="teachings">
         <div class="card">
-          <h3>Other Power</h3>
+          <h3>El Otro Poder</h3>
           <p class="yomi">TARIKI HONGAN <span class="jp" lang="ja">他力本願</span></p>
-          <p>"Other Power" does not mean relying on other people. It means the working of Amida Buddha's Primal Vow. We are saved not through our own calculations or efforts, but through the power of the Vow directed to us from the Buddha's side ― the very foundation of the teaching.</p>
+          <p>El «Otro Poder» no significa depender de otras personas. Significa la obra del Voto Primordial del Buda Amida. Somos salvados no por nuestros propios cálculos o esfuerzos, sino por el poder del Voto dirigido a nosotros desde el lado del Buda ― el fundamento mismo de la enseñanza.</p>
         </div>
         <div class="card">
-          <h3>The Evil Person as the True Object</h3>
+          <h3>La persona malvada como verdadero destinatario</h3>
           <p class="yomi">AKUNIN SHOKI <span class="jp" lang="ja">悪人正機</span></p>
-          <p>The "evil person" ― one incapable of doing good through their own power ― is precisely the person Amida's salvation is aimed at. The Vow works first of all for those who have awakened to their own limitations and the depth of their imperfection.</p>
+          <p>La «persona malvada» ― aquella incapaz de hacer el bien por su propio poder ― es precisamente a quien apunta la salvación de Amida. El Voto obra ante todo por quienes han despertado a sus propias limitaciones y a la profundidad de su imperfección.</p>
         </div>
         <div class="card">
-          <h3>Nembutsu</h3>
+          <h3>El nembutsu</h3>
           <p class="yomi">NENBUTSU <span class="jp" lang="ja">念仏</span></p>
-          <p>Saying "Namu Amida Butsu" is not a condition or a practice performed in order to be saved. Shinran received it as the natural expression of <strong>gratitude</strong> toward the Buddha who is already at work to save us.</p>
+          <p>Pronunciar «Namu Amida Butsu» no es una condición ni una práctica realizada para ser salvado. Shinran lo recibió como la expresión natural de <strong>gratitud</strong> hacia el Buda que ya está obrando para salvarnos.</p>
         </div>
         <div class="card">
-          <h3>Neither Monk nor Layman</h3>
+          <h3>Ni monje ni laico</h3>
           <p class="yomi">HISO HIZOKU <span class="jp" lang="ja">非僧非俗</span></p>
-          <p>Stripped of his clerical status by the exile, Shinran declared himself "neither monk nor layman" and took the name Gutoku ("foolish, stubble-haired") Shinran. Living as a householder ― eating meat, married ― while living in the nembutsu, he embodied a Buddhist path open to all.</p>
+          <p>Despojado de su estado clerical por el exilio, Shinran se declaró «ni monje ni laico» y tomó el nombre de Gutoku («necio de cabeza rapada») Shinran. Viviendo como cabeza de familia ― comiendo carne, casado ― y a la vez viviendo en el nembutsu, encarnó un camino budista abierto a todos.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- His Words -->
+  <!-- Sus palabras -->
   <section id="words">
     <div class="container">
-      <p class="section-label">WORDS</p>
-      <h2 class="section-title">His Words</h2>
-      <p class="section-lead">The <em>Tannisho</em> ("A Record in Lament of Divergences"), compiled by his disciple Yuien, preserves many sayings that convey Shinran's living voice.</p>
+      <p class="section-label">PALABRAS</p>
+      <h2 class="section-title">Sus palabras</h2>
+      <p class="section-lead">El <em>Tannisho</em> («Lamento por las divergencias»), compilado por su discípulo Yuien, conserva muchos dichos que transmiten la voz viva de Shinran.</p>
 
       <div class="quote-block">
-        <blockquote>Even a good person attains birth in the Pure Land ― how much more so an evil person.</blockquote>
-        <cite>― Tannisho, Chapter 3</cite>
-        <p class="quote-note">This saying overturns common sense. Condensed within it is the teaching of <em>akunin shoki</em>: the true object of the Primal Vow is not the person who still relies on their own goodness, but the one who has nothing to depend on except the Buddha.</p>
+        <blockquote>Si incluso la persona buena alcanza el nacimiento en la Tierra Pura, cuánto más la persona malvada.</blockquote>
+        <cite>― Tannisho, capítulo 3</cite>
+        <p class="quote-note">Este dicho trastoca el sentido común. En él se condensa la enseñanza del <em>akunin shoki</em>: el verdadero destinatario del Voto Primordial no es quien todavía confía en su propia bondad, sino quien no tiene nada de qué depender salvo el Buda.</p>
       </div>
 
       <div class="quote-block">
-        <blockquote>I, Shinran, do not have even a single disciple.</blockquote>
-        <cite>― Tannisho, Chapter 6</cite>
-        <p class="quote-note">Those who say the nembutsu do so through the working of Amida Buddha ― they are not "my" disciples. These words convey Shinran's stance of walking alongside people as equals, as fellow travelers and companions who live together within the Vow.</p>
+        <blockquote>Yo, Shinran, no tengo ni un solo discípulo.</blockquote>
+        <cite>― Tannisho, capítulo 6</cite>
+        <p class="quote-note">Quienes pronuncian el nembutsu lo hacen por la obra del Buda Amida ― no son «mis» discípulos. Estas palabras transmiten la actitud de Shinran de caminar junto a las personas como iguales, como compañeros de viaje que viven juntos dentro del Voto.</p>
       </div>
 
       <div class="quote-block">
-        <blockquote>The nembutsu alone is true and real.</blockquote>
-        <cite>― Tannisho, Epilogue</cite>
-        <p class="quote-note">In this world of burning passions, where all things are empty and vain, the one thing that is not falsehood is the nembutsu. These words arose from Shinran's unflinching gaze into the uncertainty of all human endeavors ― and into his own heart.</p>
+        <blockquote>Solo el nembutsu es verdadero y real.</blockquote>
+        <cite>― Tannisho, epílogo</cite>
+        <p class="quote-note">En este mundo de pasiones ardientes, donde todas las cosas son vacías y vanas, lo único que no es falsedad es el nembutsu. Estas palabras nacieron de la mirada inquebrantable de Shinran hacia la incertidumbre de todos los empeños humanos ― y hacia su propio corazón.</p>
       </div>
     </div>
   </section>
 
-  <!-- His Life -->
+  <!-- Su vida -->
   <section id="timeline">
     <div class="container">
-      <p class="section-label">LIFE</p>
-      <h2 class="section-title">His Life</h2>
+      <p class="section-label">VIDA</p>
+      <h2 class="section-title">Su vida</h2>
       <div class="timeline">
         <div class="timeline-item">
-          <span class="year">1173</span><span class="age">Birth</span>
-          <p>Born in Hino, on the outskirts of Kyoto, as a son of Hino Arinori, a court noble of modest rank.</p>
+          <span class="year">1173</span><span class="age">Nacimiento</span>
+          <p>Nace en Hino, en las afueras de Kioto, hijo de Hino Arinori, un noble de la corte de rango modesto.</p>
         </div>
         <div class="timeline-item">
-          <span class="year">1181</span><span class="age">Age 9</span>
-          <p>Ordained at Shoren-in temple. He then spends some twenty years in training on Mount Hiei.</p>
+          <span class="year">1181</span><span class="age">9 años</span>
+          <p>Es ordenado en el templo Shoren-in. Después pasa unos veinte años de práctica en el monte Hiei.</p>
         </div>
         <div class="timeline-item">
-          <span class="year">1201</span><span class="age">Age 29</span>
-          <p>Descends Mount Hiei. After a hundred-day retreat at the Rokkakudo temple, he joins Honen's community and entrusts himself to the exclusive practice of the nembutsu.</p>
+          <span class="year">1201</span><span class="age">29 años</span>
+          <p>Desciende del monte Hiei. Tras un retiro de cien días en el templo Rokkakudo, se une a la comunidad de Honen y se confía a la práctica exclusiva del nembutsu.</p>
         </div>
         <div class="timeline-item">
-          <span class="year">1207</span><span class="age">Age 35</span>
-          <p>In the suppression of the nembutsu movement (the Jogen persecution), he is exiled to Echigo (present-day Niigata). Stripped of his clerical status, he takes his stand as "neither monk nor layman."</p>
+          <span class="year">1207</span><span class="age">35 años</span>
+          <p>En la represión del movimiento del nembutsu (la persecución de Jogen), es exiliado a Echigo (actual Niigata). Despojado de su estado clerical, asume su posición de «ni monje ni laico».</p>
         </div>
         <div class="timeline-item">
-          <span class="year">c. 1214</span><span class="age">Age 42</span>
-          <p>After being pardoned, he moves to the Kanto region (Hitachi province and elsewhere), where for some twenty years he shares the nembutsu teaching with farmers and ordinary people.</p>
+          <span class="year">h. 1214</span><span class="age">42 años</span>
+          <p>Tras ser indultado, se traslada a la región de Kanto (la provincia de Hitachi y otras), donde durante unos veinte años comparte la enseñanza del nembutsu con campesinos y gente común.</p>
         </div>
         <div class="timeline-item">
-          <span class="year">c. 1224</span><span class="age">Age 52</span>
-          <p>Drafts his major work, the <em>Kyogyoshinsho</em>. Jodo Shinshu regards this year as the founding of the school.</p>
+          <span class="year">h. 1224</span><span class="age">52 años</span>
+          <p>Redacta el borrador de su obra principal, el <em>Kyogyoshinsho</em>. El Jodo Shinshu considera este año como el de la fundación de la escuela.</p>
         </div>
         <div class="timeline-item">
-          <span class="year">1230s</span><span class="age">Around age 60</span>
-          <p>Returns to Kyoto and devotes himself to writing ― completing the <em>Kyogyoshinsho</em>, composing hymns (<em>wasan</em>), and continuing to write into his final years.</p>
+          <span class="year">Década de 1230</span><span class="age">Hacia los 60 años</span>
+          <p>Regresa a Kioto y se dedica a escribir ― completa el <em>Kyogyoshinsho</em>, compone himnos (<em>wasan</em>) y sigue escribiendo hasta sus últimos años.</p>
         </div>
         <div class="timeline-item">
-          <span class="year">1263</span><span class="age">Age 90</span>
-          <p>Passes away at the residence of his younger brother Jin'u (the Zenbo-bo temple quarters), fulfilling his lifelong wish for birth in the Pure Land.</p>
+          <span class="year">1263</span><span class="age">90 años</span>
+          <p>Fallece en la residencia de su hermano menor Jin'u (los aposentos del templo Zenbo-bo), cumpliendo su anhelo de toda la vida: el nacimiento en la Tierra Pura.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Major Writings -->
+  <!-- Obras principales -->
   <section id="works">
     <div class="container">
-      <p class="section-label">WORKS</p>
-      <h2 class="section-title">Major Writings</h2>
+      <p class="section-label">OBRAS</p>
+      <h2 class="section-title">Obras principales</h2>
       <div class="works">
         <div class="work">
           <h3>Kyogyoshinsho <span class="jp" lang="ja">教行信証</span></h3>
-          <p>Shinran's magnum opus, formally titled "The True Teaching, Practice, and Realization of the Pure Land Way." Through extensive quotations from sutras and commentaries, it sets forth the doctrinal foundation of Jodo Shinshu.</p>
+          <p>La obra magna de Shinran, titulada formalmente «La verdadera enseñanza, práctica y realización del camino de la Tierra Pura». Mediante extensas citas de sutras y comentarios, expone el fundamento doctrinal del Jodo Shinshu.</p>
         </div>
         <div class="work">
-          <h3>The Three Books of Hymns <span class="jp" lang="ja">三帖和讃</span></h3>
-          <p>A collective name for the <em>Jodo Wasan</em>, <em>Koso Wasan</em>, and <em>Shozomatsu Wasan</em> ― hymns in Japanese verse praising the virtues of the Buddhas and the teachings of the seven Pure Land masters, composed so that ordinary people could chant them together.</p>
+          <h3>Los tres libros de himnos <span class="jp" lang="ja">三帖和讃</span></h3>
+          <p>Nombre colectivo del <em>Jodo Wasan</em>, el <em>Koso Wasan</em> y el <em>Shozomatsu Wasan</em> ― himnos en verso japonés que alaban las virtudes de los Budas y las enseñanzas de los siete maestros de la Tierra Pura, compuestos para que la gente común pudiera cantarlos juntos.</p>
         </div>
         <div class="work">
           <h3>Shoshinge <span class="jp" lang="ja">正信偈</span></h3>
-          <p>The "Hymn of True Entrusting," a verse concluding the Practice chapter of the <em>Kyogyoshinsho</em>. It praises Amida's Primal Vow and the lineage of the seven masters, and is still widely recited in morning and evening services today.</p>
+          <p>El «Himno de la verdadera confianza», un poema que concluye el capítulo de la Práctica del <em>Kyogyoshinsho</em>. Alaba el Voto Primordial de Amida y el linaje de los siete maestros, y todavía hoy se recita ampliamente en los servicios de la mañana y de la tarde.</p>
         </div>
         <div class="work">
           <h3>Tannisho <span class="jp" lang="ja">歎異抄</span></h3>
-          <p>A record of Shinran's sayings believed to have been compiled after his death by his disciple Yuien. Vividly conveying Shinran's own words, it has moved countless readers through the centuries and remains one of the most beloved texts of Japanese Buddhism.</p>
+          <p>Un registro de los dichos de Shinran que se cree fue compilado tras su muerte por su discípulo Yuien. Transmitiendo vívidamente las propias palabras de Shinran, ha conmovido a innumerables lectores a lo largo de los siglos y sigue siendo uno de los textos más queridos del budismo japonés.</p>
         </div>
       </div>
     </div>
@@ -504,7 +504,7 @@
 <footer>
   <div class="footer-nembutsu">Namu Amida Butsu</div>
   <div class="footer-nembutsu-jp" lang="ja">南無阿弥陀仏</div>
-  <p>This page is an introduction for learning about the teachings of Shinran Shonin.</p>
+  <p>Esta página es una introducción para conocer las enseñanzas de Shinran Shonin.</p>
 </footer>
 
 </body>
