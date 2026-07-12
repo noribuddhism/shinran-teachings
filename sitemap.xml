@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://noribuddhism.github.io/shinran-teachings/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://noribuddhism.github.io/shinran-teachings/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://noribuddhism.github.io/shinran-teachings/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://noribuddhism.github.io/shinran-teachings/es/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://noribuddhism.github.io/shinran-teachings/ko/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://noribuddhism.github.io/shinran-teachings/sv/"/>
+  </url>
+  <url>
+    <loc>https://noribuddhism.github.io/shinran-teachings/en/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://noribuddhism.github.io/shinran-teachings/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://noribuddhism.github.io/shinran-teachings/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://noribuddhism.github.io/shinran-teachings/es/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://noribuddhism.github.io/shinran-teachings/ko/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://noribuddhism.github.io/shinran-teachings/sv/"/>
+  </url>
+  <url>
+    <loc>https://noribuddhism.github.io/shinran-teachings/es/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://noribuddhism.github.io/shinran-teachings/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://noribuddhism.github.io/shinran-teachings/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://noribuddhism.github.io/shinran-teachings/es/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://noribuddhism.github.io/shinran-teachings/ko/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://noribuddhism.github.io/shinran-teachings/sv/"/>
+  </url>
+  <url>
+    <loc>https://noribuddhism.github.io/shinran-teachings/ko/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://noribuddhism.github.io/shinran-teachings/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://noribuddhism.github.io/shinran-teachings/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://noribuddhism.github.io/shinran-teachings/es/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://noribuddhism.github.io/shinran-teachings/ko/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://noribuddhism.github.io/shinran-teachings/sv/"/>
+  </url>
+  <url>
+    <loc>https://noribuddhism.github.io/shinran-teachings/sv/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://noribuddhism.github.io/shinran-teachings/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://noribuddhism.github.io/shinran-teachings/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://noribuddhism.github.io/shinran-teachings/es/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://noribuddhism.github.io/shinran-teachings/ko/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://noribuddhism.github.io/shinran-teachings/sv/"/>
+  </url>
+</urlset>
