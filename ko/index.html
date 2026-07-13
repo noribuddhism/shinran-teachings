@@ -95,10 +95,20 @@
     text-align: center;
     padding: 110px 24px 100px;
     background:
-      radial-gradient(ellipse 80% 60% at 50% 0%, rgba(107, 82, 133, 0.10), transparent),
-      linear-gradient(180deg, var(--washi-deep), var(--washi));
+      linear-gradient(180deg, rgba(247, 243, 234, 0.8), rgba(247, 243, 234, 0.7) 50%, var(--washi) 97%),
+      url("../img/hero-hiei.jpg") center 30% / cover no-repeat;
     overflow: hidden;
   }
+  .hero-credit {
+    position: absolute;
+    right: 12px;
+    bottom: 8px;
+    font-size: 0.68rem;
+    color: var(--ink-soft);
+    opacity: 0.8;
+    letter-spacing: 0.05em;
+  }
+  .hero-credit a { color: inherit; }
   .hero-enso {
     width: 190px;
     height: 190px;
@@ -261,6 +271,48 @@
     text-align: left;
   }
 
+  /* ===== 연고지·분위기 사진 ===== */
+  .accent-photo {
+    max-width: 680px;
+    margin: 0 auto 54px;
+  }
+  .accent-photo img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    border: 1px solid var(--line);
+  }
+  .places {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+    max-width: 820px;
+    margin: 40px auto 60px;
+  }
+  .place { margin: 0; }
+  .place img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    display: block;
+    border: 1px solid var(--line);
+    background: #fffdf8;
+  }
+  .place figcaption {
+    margin-top: 10px;
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+    line-height: 1.6;
+  }
+  .place figcaption .credit {
+    display: block;
+    font-size: 0.72rem;
+    color: var(--kin);
+  }
+  .place figcaption .credit a { color: inherit; text-decoration: none; }
+  .place figcaption .credit a:hover { text-decoration: underline; }
+
   /* ===== 연표 ===== */
   .timeline {
     max-width: 700px;
@@ -325,6 +377,68 @@
   }
   .work p { font-size: 0.88rem; color: var(--ink-soft); }
 
+  /* ===== 문의 ===== */
+  .contact-form {
+    max-width: 560px;
+    margin: 0 auto;
+    display: grid;
+    gap: 18px;
+  }
+  .contact-form label {
+    display: block;
+    font-size: 0.88rem;
+    color: var(--murasaki);
+    letter-spacing: 0.08em;
+    margin-bottom: 6px;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid var(--line);
+    background: #fffdf8;
+    font-family: inherit;
+    font-size: 0.95rem;
+    color: var(--ink);
+    box-sizing: border-box;
+  }
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    outline: none;
+    border-color: var(--murasaki-light);
+  }
+  .contact-form textarea { min-height: 150px; resize: vertical; }
+  .contact-form .contact-submit {
+    justify-self: center;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+  }
+
+  /* ===== 후원 ===== */
+  .donation-box {
+    max-width: 560px;
+    margin: 0 auto;
+    text-align: center;
+    background: #fffdf8;
+    border: 1px solid var(--kin);
+    padding: 40px 32px;
+  }
+  .donation-box p { font-size: 0.95rem; color: var(--ink-soft); margin-bottom: 24px; }
+  .donate-btn {
+    display: inline-block;
+    background: var(--murasaki);
+    color: #f3edda;
+    text-decoration: none;
+    padding: 12px 36px;
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    border-radius: 999px;
+    transition: background 0.2s;
+  }
+  .donate-btn:hover { background: var(--murasaki-light); }
+  .donation-note { margin-top: 16px; font-size: 0.8rem !important; margin-bottom: 0 !important; }
+
   /* ===== 푸터 ===== */
   footer {
     background: var(--murasaki);
@@ -369,6 +483,8 @@
       <a href="#words">그의 말씀</a>
       <a href="#timeline">생애</a>
       <a href="#works">주요 저서</a>
+      <a href="#donate" hidden>후원</a>
+      <a href="#contact" hidden>문의</a>
       <a class="lang-switch" href="../index.html" lang="ja">日本語</a>
       <a class="lang-switch" href="../en/index.html" lang="en">English</a>
       <a class="lang-switch" href="../es/index.html" lang="es">Español</a>
@@ -390,6 +506,7 @@
     <h1>신란의 가르침</h1>
     <p class="sub">아미타불의 본원 속에 살다 ― 정토진종(조도신슈)의 종조, 그 생애와 말씀</p>
     <div class="nembutsu">나무아미타불<span class="jp" lang="ja">南無阿弥陀仏</span></div>
+    <p class="hero-credit">히에이산 ― 사진: <a href="https://commons.wikimedia.org/wiki/File:Drone_panorama_of_Mount_Hiei_from_the_southwest.jpg" rel="noopener">Benlisquare</a> (CC BY-SA 4.0)</p>
   </div>
 
   <!-- 신란은 누구인가 -->
@@ -446,6 +563,7 @@
       <p class="section-label">말씀</p>
       <h2 class="section-title">그의 말씀</h2>
       <p class="section-lead">제자 유이엔(唯円)이 엮은 것으로 전해지는 『탄이초(歎異抄)』에는 신란의 생생한 육성을 전하는 말씀이 많이 남아 있습니다.</p>
+      <figure class="accent-photo"><img src="../img/lotus.jpg" alt="연꽃" loading="lazy"></figure>
 
       <div class="quote-block">
         <blockquote>선인도 왕생을 이루거늘, 하물며 악인이랴.</blockquote>
@@ -472,6 +590,20 @@
     <div class="container">
       <p class="section-label">생애</p>
       <h2 class="section-title">생애</h2>
+      <div class="places">
+        <figure class="place">
+          <img src="../img/hiei.jpg" alt="히에이산 엔랴쿠지 곤폰추도" loading="lazy">
+          <figcaption>히에이산 엔랴쿠지 곤폰추도 ― 아홉 살부터 약 20년간 수행한 곳<span class="credit">사진: <a href="https://commons.wikimedia.org/wiki/File:Enryakuji_Konponchudo04n4272.jpg" rel="noopener">663highland</a> (CC BY 2.5)</span></figcaption>
+        </figure>
+        <figure class="place">
+          <img src="../img/rokkakudo.jpg" alt="교토 롯카쿠도" loading="lazy">
+          <figcaption>롯카쿠도 ― 백일 기도 후 호넨의 문하에 들어간 곳<span class="credit">사진: <a href="https://commons.wikimedia.org/wiki/File:%E9%A0%82%E6%B3%95%E5%AF%BA_%E5%85%AD%E8%A7%92%E5%A0%82_-_%E6%9C%AC%E5%A0%821.JPG" rel="noopener">Yanajin33</a> (CC BY-SA 4.0)</span></figcaption>
+        </figure>
+        <figure class="place">
+          <img src="../img/hongwanji.jpg" alt="교토 니시혼간지 고에이도" loading="lazy">
+          <figcaption>니시혼간지 ― 신란의 진영을 모신 본산<span class="credit">사진: <a href="https://commons.wikimedia.org/wiki/File:170216_Nishi_Honganji_Kyoto_Japan06n.jpg" rel="noopener">663highland</a> (CC BY 2.5)</span></figcaption>
+        </figure>
+      </div>
       <div class="timeline">
         <div class="timeline-item">
           <span class="year">1173년</span><span class="age">탄생</span>
@@ -532,6 +664,45 @@
           <p>신란 입적 후 제자 유이엔이 엮은 것으로 전해지는 어록. 신란의 말씀을 생생하게 전하며, 시대를 넘어 수많은 사람들의 마음을 사로잡아 온 일본 불교의 명저입니다.</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- 후원 -->
+  <section id="donate" hidden>
+    <div class="container">
+      <p class="section-label">후원</p>
+      <h2 class="section-title">사이트 후원 안내</h2>
+      <div class="donation-box">
+        <p>이 사이트는 신란의 가르침을 다섯 개 언어로 소개하기 위해 개인이 운영하는 비영리 페이지입니다. 사이트의 유지와 발전을 Ko-fi를 통해 응원해 주시면 큰 힘이 됩니다.</p>
+        <a class="donate-btn" href="https://ko-fi.com/KOFI_USERNAME" rel="noopener">☕ Ko-fi로 후원하기</a>
+        <p class="donation-note">보내 주신 후원은 사이트 운영을 위해 소중히 사용하겠습니다.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 문의 -->
+  <section id="contact" hidden>
+    <div class="container">
+      <p class="section-label">문의</p>
+      <h2 class="section-title">문의하기</h2>
+      <p class="section-lead">가르침에 대한 질문, 감상, 사이트에 대한 의견 등을 부담 없이 보내 주세요.</p>
+      <form class="contact-form" action="https://formspree.io/f/FORMSPREE_ID" method="POST">
+        <div>
+          <label for="name">이름</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+          <label for="email">이메일</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="message">메시지</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <input type="hidden" name="page" value="ko">
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+        <button type="submit" class="donate-btn contact-submit">보내기</button>
+      </form>
     </div>
   </section>
 
